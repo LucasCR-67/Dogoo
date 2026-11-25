@@ -68,11 +68,7 @@ public class Main {
 
 //LOOP DO MENU: LISTAR, ALTERAR A LISTA, ESCOLHER E FAZER AÇÕES
         do {
-            System.out.println("===LISTA DE PETS===");
-            for (int i = 0; i < pets.size(); i++) {
-                Pet p = pets.get(i);
-                System.out.println((i + 1) + " - " + p.getNome());
-            }
+            Metodos.listarPets(pets); //METODO QUE LISTA OS ANIMAIS RECEBIDOS
 
             System.out.print("Antes de continuarmos, você deseja alterar a lista, removendo ou adicionando algum pet? (S/N): ");
             String escolhaDelete = scanner.nextLine().toUpperCase();
@@ -123,10 +119,7 @@ public class Main {
                 }
 
                 System.out.println("===NOVA LISTA===");
-                for (int i = 0; i < pets.size(); i++) {
-                    Pet p = pets.get(i);
-                    System.out.println((i + 1) + " - " + p.getNome());
-                }
+                Metodos.listarPets(pets); //METODO QUE LISTA OS ANIMAIS RECEBIDOS
             }
 
             System.out.println("                     ");
@@ -187,5 +180,6 @@ public class Main {
             }
 
         } while (opcaoMenu.equals("1"));
+        System.out.print("Muito obrigado por usar Dogoo e confiar nessa aplicação a rotina dos seus pets! ;)");
     }
 }
