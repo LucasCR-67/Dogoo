@@ -1,6 +1,7 @@
 public class Gato extends Pet {
 
-    public Gato(String nome, int idade, double peso, String raca) {
+    public Gato(String nome, int idade, double peso, String raca)
+    {
         super(nome, idade, peso, raca);
     }
 
