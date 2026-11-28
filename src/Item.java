@@ -9,6 +9,10 @@ public class Item {
         this.preco = preco;
     }
 
+    public static void addItem() {
+
+    }
+
     //GETTERS E SETTERS:
     public String getTipo() {
         return tipo;
